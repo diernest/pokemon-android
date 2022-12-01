@@ -4,7 +4,6 @@ package com.example.pokemon.core.data.remote.dto
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
-@JsonClass(generateAdapter = true)
 data class PokemonDtoResponse(
     @field:Json(name = "count")
     val count: Int,

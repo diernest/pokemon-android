@@ -19,11 +19,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         lifecycleScope.launch {
-            repository.getListPokemonRemotely().onSuccess {
-                print(it)
-            }.onFailure {
-
-            }
+            val movies = repository.getListPokemonRemotely()
+            println(movies)
         }
     }
 }

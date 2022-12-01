@@ -10,9 +10,8 @@ class PokemonRepositoryImp(
     private val api: PokemonApi
 ): PokemonRepository {
 
-    override suspend fun getListPokemonRemotely()= resultOf {
-        val results = api.getListPokemon().results
-        results.map { it.toDomain() }
+    override suspend fun getListPokemonRemotely(): List<Pokemon> {
+        return api.getListPokemon().results.map { it.toDomain() }
     }
 
 }

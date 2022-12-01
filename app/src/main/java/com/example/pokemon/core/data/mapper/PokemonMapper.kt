@@ -15,6 +15,7 @@ fun PokemonResult.toDomain(): Pokemon {
 fun getId(value: String?): Int{
     value?.let {
         var removeURL = value.replace(PokemonApi.BASE_URL,"")
+        removeURL = removeURL.replace("pokemon/","")
         removeURL = removeURL.replace("/","")
         return Integer.parseInt(removeURL)
     }?: run {
