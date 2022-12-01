@@ -5,9 +5,9 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class Result(
-    @Json(name = "name")
+data class PokemonResult(
+    @field:Json(name = "name")
     val name: String,
-    @Json(name = "url")
+    @field:Json(name = "url")
     val url: String
 )

@@ -1,4 +1,4 @@
-package com.example.pokemon.core.data.remote.mapper
+package com.example.pokemon.core.data.mapper
 
 import com.example.pokemon.core.data.domain.model.Pokemon
 import com.example.pokemon.core.data.remote.PokemonApi

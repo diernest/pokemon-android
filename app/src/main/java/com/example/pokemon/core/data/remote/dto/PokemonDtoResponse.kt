@@ -6,12 +6,12 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class PokemonDtoResponse(
-    @Json(name = "count")
+    @field:Json(name = "count")
     val count: Int,
-    @Json(name = "next")
+    @field:Json(name = "next")
     val next: String,
-    @Json(name = "previous")
+    @field:Json(name = "previous")
     val previous: Any,
-    @Json(name = "results")
-    val results: List<Result>
+    @field:Json(name = "results")
+    val results: List<PokemonResult>
 )
